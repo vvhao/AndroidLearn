@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background22"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+    <!-- 上面的 android:background 设置的main界面的背景-->
+    <!-- xml 注释的写法 -->
+    <!-- vertical    垂直的
+         orientation 方向  -->
+
+    <!--[1] 搞一个标题  -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="200dp"
+
+        >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Niu 学习"
+            android:textSize="30dp"
+            android:textColor="#03A9F4"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:src="@drawable/peace"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="centerInside"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/account"/>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="请输入登录账号"
+
+                android:id="@+id/ed_namelogin"
+
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            >
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/passwd"/>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="请输入登录密码"
+                android:id="@+id/ed_passlogin"
+                />
+
+        </LinearLayout>
+
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bt_login"
+            android:layout_marginTop="10dp"
+            android:text="登录"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/button_shap"
+
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/bt_toRegister"
+            android:textStyle="bold"
+            android:text="注册"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/button_shap"
+            />
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
