@@ -8,7 +8,9 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Login_ui">
+
+        android:theme="@style/Theme.Test">
+        <!-- 设置对应的使用主题-->
 
         <activity android:name=".MainActivity">
             <intent-filter>
